@@ -12,6 +12,6 @@ module.exports = {
 		eqeqeq:                        [2, 'always', { null: 'ignore' }],
 		'func-style':                  [2, 'declaration', { allowArrowFunctions: true }],
 		'no-foreach/no-foreach':       [2],
-		'no-unused-vars':              [2, { varsIgnorePattern: '_' }],
+		'no-unused-vars':              [2, { varsIgnorePattern: '^_', argsIgnorePattern: '^_' }],
 	},
 }
