@@ -1,3 +1,7 @@
+const baseRules = require('eslint-config-airbnb-base/rules/style')
+
+const [_, ...restricted] = baseRules.rules['no-restricted-syntax']
+
 module.exports = {
 	plugins: ['no-foreach'],
 	rules: {
@@ -15,6 +19,7 @@ module.exports = {
 		eqeqeq:                           [2, 'always', { null: 'ignore' }],
 		'func-style':                     [2, 'declaration', { allowArrowFunctions: true }],
 		'no-foreach/no-foreach':          [2],
+		'no-restricted-syntax':           [2, ...restricted.filter(r => r !== 'ForOfStatement')],
 		'no-unused-vars':                 [2, { varsIgnorePattern: '^_', argsIgnorePattern: '^_' }],
 	},
 }
