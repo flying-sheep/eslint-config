@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-flying-sheep",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Empowering AirBnB variant that allows you to be smart. ;-less, tabs, properties, x == null.",
   "main": "index.js",
   "repository": {
@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/flying-sheep/eslint-config#readme",
   "peerDependencies": {
-    "eslint": "^3.9.1",
-    "eslint-config-airbnb": "^13.0.0",
-    "eslint-plugin-import": "^2.1.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-react": "^6.6.0",
-    "eslint-plugin-no-foreach": "^1.0.0"
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-no-foreach": "^1.0.0",
+    "eslint-plugin-react": "^6.10.3"
   }
 }
