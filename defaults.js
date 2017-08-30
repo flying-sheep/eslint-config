@@ -26,7 +26,7 @@ module.exports = {
 		'func-style':                     [2, 'declaration', { allowArrowFunctions: true }],
 		//for..of instead of forEach: be explicit about using side effects
 		'no-foreach/no-foreach':          [2],
-		'no-restricted-syntax':           [2, ...restricted.filter(r => r !== 'ForOfStatement')],
+		'no-restricted-syntax':           [2, ...restricted.filter(r => ![r, r.selector].includes('ForOfStatement')],
 		//allow python-style _ignored variables
 		'no-unused-vars':                 [2, { varsIgnorePattern: '^_', argsIgnorePattern: '^_' }],
 	},
