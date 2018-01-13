@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-flying-sheep",
-  "version": "3.0.2-dev",
+  "version": "4.0.0",
   "description": "Empowering AirBnB variant that allows you to be smart. ;-less, tabs, properties, x == null.",
   "main": "index.js",
   "repository": {
