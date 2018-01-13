@@ -16,7 +16,7 @@ module.exports = {
 		semi:                             [2, 'never'],
 		// spacing
 		'key-spacing':                    [2, { mode: 'minimum' }], // TODO: allow consistent align and 1-space styles
-		'space-before-function-paren':    [2, 'never'],
+		'space-before-function-paren':    [2, { anonymous: 'never', named: 'never', asyncArrow: 'always' }],
 		'react/jsx-tag-spacing':          [2, { beforeSelfClosing: 'never' }],
 		// indented empty lines
 		'no-trailing-spaces':             [2, { skipBlankLines: true }], // TODO: enforce indented empty lines
