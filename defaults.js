@@ -27,6 +27,8 @@ module.exports = {
 		eqeqeq:                           [2, 'always', { null: 'ignore' }],
 		// function statements for function.name
 		'func-style':                     [2, 'declaration', { allowArrowFunctions: true }],
+		// allow using hoisted declarations before they’re defined (necessary for mutual recursion)
+		'no-use-before-define':           [2, { functions: false, classes: false }],
 		// for..of instead of forEach: be explicit about using side effects
 		'no-foreach/no-foreach':          [2],
 		'no-restricted-syntax':           [2, ...restricted.filter(r => ![r, r.selector].includes('ForOfStatement'))],
