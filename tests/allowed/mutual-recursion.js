@@ -12,3 +12,11 @@ class B {
 		return this.a
 	}
 }
+
+function isEven(n) {
+	return n === 0 ? true : isOdd(n - 1)
+}
+
+function isOdd(n) {
+	return n === 0 ? false : isEven(n - 1)
+}

@@ -18,8 +18,9 @@ module.exports = {
 		'key-spacing':                    [2, { mode: 'minimum' }], // TODO: allow consistent align and 1-space styles
 		'space-before-function-paren':    [2, { anonymous: 'never', named: 'never', asyncArrow: 'always' }],
 		'react/jsx-tag-spacing':          [2, { beforeSelfClosing: 'never' }],
-		// indented empty lines
+		// indented empty lines and blank lines
 		'no-trailing-spaces':             [2, { skipBlankLines: true }], // TODO: enforce indented empty lines
+		'lines-between-class-members':    [2, 'always', { exceptAfterSingleLine: true }],
 		
 		/* best practices */
 		
